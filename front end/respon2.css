@@ -218,7 +218,7 @@ input:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 370px;
+        width: 350px;
     }
     .for-contact-heading{
         transform: translateY(30px);
