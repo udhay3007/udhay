@@ -1,0 +1,239 @@
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.sq-catering{
+    height:auto;
+    width:100%;
+    background-color: black;
+}
+.info{
+    color:white;
+    background-color: black;
+    font-size:20px;
+    display: flex;
+    width: 100%;
+    gap:50%
+}
+.squad{
+    width:200px;
+    text-align: center;
+}
+.about-us{
+    gap: 40px;
+    display: flex;
+    transform: translateX(7.5rem)
+}
+.squad>p,.about-us>p{
+    transition: width 0.25s ease;
+}
+.squad>p:hover,.about-us>p:hover{
+    scale: 1.1;
+}
+.squad>p:hover,.about-us>p:hover{
+    color:wheat;
+    cursor: pointer;
+}
+.food-item{
+    width:100%;
+    height:30rem;
+    display: flex;
+    justify-content: center;
+}
+.food-item>img{
+    width:80%;
+    height: 100%;
+}
+.catering-ambiance{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 5px;
+    row-gap:10px ;
+
+}
+.catering-ambiance>img{
+    width: 185px;
+    height: 180px;
+}
+.ambi-title{
+    display: flex;
+    justify-content: center;
+}
+div>h4{
+    color: white;
+    font-size: 40px;
+}
+.catering-history{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.history-p1,.h-p2{
+    font-size:x-large;
+    color: white;
+    width: 85%;
+}
+ .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+ }
+ .m-title{
+    color: white;
+    font-size: 50px;
+ }
+.item-1,.item-2,.item-3,.item-4,.item-5>h6,p,.Online-reserve-heading{
+    color: white;
+}
+.f-items>h6{
+    font-family: 30px;
+}
+.m-img{
+    width: 700px;
+    height: 600px;
+}
+.m-img>img{
+    width:100%;
+    height:100%;
+}
+.f-items{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.address{
+    color:deepskyblue;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    gap: 20px;
+}
+input{
+    width:100%;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    transition: width 0.25s ease;
+}
+input:hover{
+    width:440px;
+}
+.contact-us>.send-msg{
+    width: 150px;
+    cursor: pointer;
+}
+.Online-reserve-heading{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    transform: translateY(20px);
+}
+@media screen and (max-width:400px) {
+    .about-us{
+        display: none;
+    }
+    .info{
+        justify-content: center;
+    }
+    .catering-history{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .history-p1,.h-p2{
+        justify-content: center;
+    }
+    .food-item{
+        margin: auto;
+        width:280px ;
+        height:330px ;
+    }
+    .food-item>img{
+        width: 100%;
+        height: 100%;
+    }
+    .ambi-title>h4{
+        text-align: center;
+        font-size: 25px;
+        color: darkkhaki;
+    }
+    .catering-ambiance{
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    .catering-ambiance>img{
+        width: 170px;
+        height: 165px;
+    }
+    .m-img{
+       display: none;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+    .f-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateY(10px);
+    }
+    .m-title,.item-1,.item-2,.item-3,.item-4,.item-5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .h6{
+        display: none;
+    }
+    .m-title{
+        text-decoration: underline;
+        height: 48px;
+    }
+    .item-1,.item-2,.item-3,.item-4,.item-5{
+        height: 25px;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .con-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 370px;
+    }
+    .for-contact-heading{
+        transform: translateY(30px);
+    }
+    .contact-us{
+        width:250px;
+    }
+    input{
+        width:100%;
+        border: none;
+        padding: 10px;
+        border-radius: 15px;
+        transition:none;
+    }
+    input:hover{
+        width:250px;
+}
+}
